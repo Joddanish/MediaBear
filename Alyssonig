@@ -98,7 +98,6 @@
           This can improve the experience for assistive technology users by hiding what is essentially duplicated
 
         -->
-
         
         <!-- Spotify -->
         <a class="button button-spotify" href="https://instagram.com/alyssonflow" rel="noopener" role="button"><img class="icon" src="images/icons/spotify.svg" alt="">Spotify</a><br>
