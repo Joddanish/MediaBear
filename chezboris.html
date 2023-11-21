@@ -32,13 +32,20 @@
   <link rel="icon" type="image/png" href="images/purelyfans.png">
 
   <style>
-    .text-with-image {
-      text-align: center; /* Center the content */
-      max-width: 600px; /* Adjust the maximum width as needed */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+      max-width: 900px; /* Adjust the maximum width as needed */
       margin: 0 auto; /* Center the container */
     }
 
-    .text-with-image img {
+    .grid-item {
+      margin-top: 10%;
+    }
+
+    .grid-item img {
       max-width: 100%;
       height: auto;
       display: block;
@@ -52,47 +59,38 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container text-with-image">
-    <img src="images/purelyfans1.png" class="avatar" srcset="images/purelyfans1.png">
+  <div class="grid-container">
 
-    <div class="row">
-      <div class="column" style="margin-top: 10%">
-
-        <!-- Title -->
-        <h1 role="heading">Alysson Miles</h1>
-
-        <!-- Short Bio -->
-        <p>Somewhere we can get to know each other on a whole other level 🌹 <a href="https://linktr.ee" target="_blank" rel="noopener" role="link"></a></p>
-
-        <!-- Add your buttons here -->
-
-        <!-- Pinterest -->
-        <a class="button button-pinterest" href="https://onlyfans.com/alyssonz/c37" role="button"><img class="icon" src="images/icons/pinterest.svg" alt="">Pinterest</a><br>
-
-        <!-- Buy Me A Coffee -->
-        <a class="button button-coffee" href="https://onlyfans.com/alyssonz/c37" role="button"><img class="icon" src="images/icons/buy-me-a-coffee.svg" alt="">Coffee</a><br>
-
-        <!-- Spotify -->
-        <a class="button button-spotify" href="https://onlyfans.com/alyssonz/c37" role="button"><img class="icon" src="images/icons/spotify.svg" alt="">Spotify</a><br>
-
-        <!-- Instagram -->
-        <a class="button button-instagram" href="https://onlyfans.com/alyssonz/c37" rel="noopener" role="button"><img class="icon" src="images/icons/instagram.svg" alt="">Instagram</a><br>
-
-        <!-- OnlyFans -->
-        <a class="button button-onlyfans" href="https://onlyfans.com/alyssonz/c37" rel="noopener" role="button"><img class="icon" src="images/icons/onlyfans.svg" alt=""> Message Me! 😘</a><br>
-
-        <br>
-        <!-- 
-          Footer:
-          This includes a link to privacy.html page which can be setup for your Privacy Policy.
-          This also includes a link to the LittleLink repository to make forking LittleLink easier.
-          You can edit or remove anything here to make your own footer.
-        -->
-        <p><a href="privacy.html"></a><a href="https://littlelink.io" target="_blank" rel="noopener" role="button"></a>Powered by ©PurelyFans</p>
-
-      </div>
+    <!-- Grid Item 1 -->
+    <div class="grid-item">
+      <img src="images/purelyfans1.png" class="avatar" srcset="images/purelyfans1.png">
+      <h1 role="heading">Alysson Miles</h1>
+      <p>Somewhere we can get to know each other on a whole other level 🌹 <a href="https://linktr.ee" target="_blank" rel="noopener" role="link"></a></p>
+      <!-- Add your buttons here -->
     </div>
+
+    <!-- Grid Item 2 -->
+    <div class="grid-item">
+      <!-- Content for the second grid item -->
+    </div>
+
+    <!-- Grid Item 3 -->
+    <div class="grid-item">
+      <!-- Content for the third grid item -->
+    </div>
+
+    <!-- Repeat for the remaining items -->
+
   </div>
+
+  <br>
+  <!-- 
+      Footer:
+      This includes a link to privacy.html page which can be set up for your Privacy Policy.
+      This also includes a link to the LittleLink repository to make forking LittleLink easier.
+      You can edit or remove anything here to make your own footer.
+  -->
+  <p><a href="privacy.html"></a><a href="https://littlelink.io" target="_blank" rel="noopener" role="button"></a>Powered by ©PurelyFans</p>
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
