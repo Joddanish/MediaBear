@@ -533,9 +533,7 @@
                     <div class="font_family c8ke-icon-add-icon c8ke-com-bio-btn-unuse c8ke-bookmark-webapp-btn" title="Bookmark"></div>
                 </div>
                 <div style="position: relative;display: inline-block;margin-left:5px;" class="c8ke-bio-page-preview-header-icon-style">
-                    <div class="c8ke-custom-div-vertical c8ke-bio-bar-cursor font_family c8ke-icon-share-icon c8ke-com-bio-btn-unuse pulse_medium" onclick="showSocialModal();" style="animation-iteration-count:6;-webkit-animation-iteration-count:6;">
-                        <i class=""></i>
-                    </div>
+                    
                     <div class="c8ke-bio-bar-share-div-head c8ke-bio-page-share-btn" style="display: none;" id="bioBarHeadDiv">
                         <div class="c8ke-get-c8ke-page-desc c8ke-get-c8ke-page-desc-desktop">Share this page</div>
                         <ul style="margin-top: 0;">
@@ -594,80 +592,7 @@
                     <div id="dg" style="z-index: 22; position: fixed ! important;  top: 0px; width:100%;-webkit-overflow-scroll:touch;box-sizing:border-box;">
                         <div class="c8ke-com-float-header-div">
                             <div id="floatHeaderDiv" style="display: none;background: #FFFFFF;box-shadow: rgb(0 0 0 /15%) 0px 5px 30px 0px;">
-                                <div class="c8ke-com-content c8ke-com-phone-header">
-                                    <div class="c8ke-com-phone-float-left c8ke-com-phone-middle c8ke-com-phone-pl-10" onclick="backToTop()">
-                                        <span class="c8ke-com-userinfo c8ke-com-clearfix">
-                                            <img id="userImage_float" src="https://d1dugnwx5ew6jg.cloudfront.net/rs:fill:320:320/q:100/czM6Ly9jOGtlLXByb2QvODQxYzFjOGQtZTFlMS00YTViLTk0ODUtYWE3NjFhNjE2MTYzXzE3MDAwODY1MzcxMDUucG5n" class="c8ke-com-userprofile-photo-size-small border mx-auto">
-                                        </span>
-                                    </div>
-                                    <div class="c8ke-com-phone-float-left c8ke-com-phone-pl-10" style="margin-top: -4px;">
-                                        <div style="margin-top:16px; padding:0; ">
-                                            <c8ke-follow-button class="c8ke-bio-page-preview-header-icon-style c8ke-bio-page-preview-header-icon-style-float-bar" userid="841c1c8d-e1e1-4a5b-9485-aa761a616163" style="display:inline-block;margin-left: 5px;" ng-version="8.1.3">
-                                                <div>
-                                                    <div style="cursor: pointer;" id="followBtnA" class="font_family c8ke-icon-follow-icon c8ke-com-bio-btn-unuse c8ke-bio-page-preview-header-icon-size-float-bar" title="+Follow"></div>
-                                                </div>
-                                            </c8ke-follow-button>
-                                            <div class="c8ke-bio-page-preview-header-icon-style c8ke-bio-page-preview-header-icon-style-float-bar" style="display: none; margin-left: 5px;cursor:pointer;" id="install_button_float">
-                                                <div class="font_family c8ke-icon-add-icon c8ke-com-bio-btn-unuse c8ke-bookmark-webapp-btn c8ke-bio-page-preview-header-icon-size-float-bar" title="Bookmark"></div>
-                                            </div>
-                                            <div style="display:none;margin-left: 5px;" id="showInfo">
-                                                <a href="javascript:void(0);" class="c8ke-com-info-btn" title="Information"></a>
-                                            </div>
-                                            <div class="c8ke-bio-page-preview-header-icon-style c8ke-bio-bar-cursor c8ke-bio-page-preview-header-icon-style-float-bar" onclick="showSocialFloatModal();" style="position: relative;display: inline-block;margin-left: 5px;">
-                                                <div class="c8ke-custom-div-vertical  font_family c8ke-icon-share-icon c8ke-com-bio-btn-unuse pulse_medium c8ke-bio-page-preview-header-icon-size-float-bar" style="animation-iteration-count:6;-webkit-animation-iteration-count:6;">
-                                                    <i class=""></i>
-                                                </div>
-                                                <div class="c8ke-bio-bar-share-div-head c8ke-bio-page-share-float-btn" style="display: none;position: fixed !important;margin-left:0!important;top: 54px;" id="bioBarHeadFloatDiv">
-                                                    <div class="c8ke-get-c8ke-page-desc c8ke-get-c8ke-page-desc-desktop">Share this page</div>
-                                                    <ul style="margin-top: 0;">
-                                                        <li>
-                                                            <div share-data="" onclick="shareSocial('Chezboris',2);commonC8keGa('share','facebook');" class="c8ke-share-btn c8ke-share-fb-bg">
-                                                                <i class="fab fa-facebook-f"></i>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="c8ke-share-btn c8ke-share-tw-bg" share-data="" onclick="shareSocial('Chezboris',3);commonC8keGa('share','twitter');">
-                                                                <i class="fab fa-twitter"></i>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="c8ke-share-btn c8ke-share-pin-bg" share-data="" onclick="shareSocial('Chezboris',4);commonC8keGa('share','pinterest');">
-                                                                <i class="fab fa-pinterest"></i>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="c8ke-share-btn c8ke-share-email-bg" target="_blank" share-data="" onclick="shareSocial('Chezboris',1);commonC8keGa('share','email');">
-                                                                <i class="far fa-envelope"></i>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="c8ke-share-btn c8ke-share-link-bg" share-data="" onclick="showShareLink('Chezboris');commonC8keGa('share','copyLink');">
-                                                                <i class="fas fa-link"></i>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="c8ke-share-btn c8ke-share-fb-bg" share-data="" onclick="showQrCode('Chezboris','');commonC8keGa('share','qrCode');">
-                                                                <i class="fas fa-qrcode"></i>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="c8ke-get-c8ke-page" onclick="c8keWindowOpen('https://c8ke.com/?r=Chezboris&utm_source=biopage&utm_campaign=bioshare');">
-                                                        <div class="c8ke-get-c8ke-page-text">
-                                                            <div>Create Your C8KE</div>
-                                                            <div class="c8ke-get-c8ke-page-desc c8ke-get-c8ke-page-desc-desktop">Link in bio mobile site</div>
-                                                        </div>
-                                                        <div class="c8ke-get-c8ke-page-logo">
-                                                            <i class="fas fa-plus-circle"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                               
                     <div id="c8ke_preview_block_324845" class="c8ke-page-block-header">
                         <div class="c8ke-bio-page-preview-box-content-header c8ke-preview-avatar-position c8ke-page-spacing-header" style="width: auto;">
                             <div class="c8ke-bio-page-preview-box-userlogo" id="userImageOrg">
@@ -785,7 +710,7 @@
 <footer class="c8ke-bio-page-footer c8ke-com-mt-5 c8ke-com-text-center c8ke-com-text-black-50 c8ke-com-clearfix c8ke-com-mb-2">
     <div class="c8ke-com-footer-copyright">
         <span class="c8ke-com-pb-text">Powered by</span>
-        <a href="https://c8ke.com/?r=Chezboris&utm_source=biopage&utm_campaign=biofooter" class="c8ke-com-footer-c8kelogo"></a>
+        
     </div>
 </footer>
 </div></c8ke-pullrefresh-tag><style>
