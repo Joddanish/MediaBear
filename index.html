@@ -8876,6 +8876,7 @@
                             return B(t) === G.PNG
                         }(t) ? G.PNG : k(t) ? G.WEBP : G.UNRECOGNIZED
                     }
+                    //returns file extension
                     function B(t) {
                         return (/[.]([^.]+)$/.exec(t) && /[.]([^.]+)$/.exec(t)[1] || "").toLowerCase()
                     }
@@ -9514,12 +9515,17 @@
                         return "number" == typeof t && !isNaN(t) && 0 !== t && t >= e && t <= i
                     }
                     function at(t, e, i, n) {
+                        alert(t);
+                        alert(e);
+                        alert(i);
+                        alert(n);
+                        alert("get");
                         const r = function(t) {
                             var e;
                             return null !== (e = null == t ? void 0 : t.isSEOBot) && void 0 !== e && e
                         }(n)
-                          , o = H(e.id)
-                          , c = function(t, e) {
+                        const o = H(e.id);
+                        const c = function(t, e) {
                             const i = /\.([^.]*)$/
                               , n = new RegExp(`(${y.concat(x).join("|")})`,"g");
                             if (e && e.length) {
@@ -9530,8 +9536,10 @@
                             }
                             const a = t.match(/\/(.*?)$/);
                             return (a ? a[1] : t).replace(i, "")
-                        }(e.id, e.name)
-                          , s = r ? 1 : function(t) {
+                        }(e.id, e.name);
+                        alert(c);
+                        alert(o)
+                        const s = r ? 1 : function(t) {
                             return Math.min(t.pixelAspectRatio || 1, a)
                         }(i)
                           , h = B(e.id)
@@ -9563,6 +9571,8 @@
                             filters: {},
                             transformed: _
                         };
+                        alert("s"+ s);
+                        alert("s"+ Q(T, e, i));
                         return _ && (Q(T, e, i),
                         it(T, n)),
                         T
@@ -10552,6 +10562,7 @@
                             this.scrollEffectsIntersectionObserver && this.scrollEffectsIntersectionObserver.unobserve(e)
                         }
                         setSrcAttribute(e, t, i, n) {
+
                             (0,
                             B.Q4)(e, t) !== n && (t ? e.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", n) : (e.hasAttribute("loading") && e.removeAttribute("loading"),
                             i && e.setAttribute("srcset", n),
@@ -12543,6 +12554,7 @@
                             try {
                                 c[n] = q;
                                 c[p] = r;
+                                alert(q+","+r)
                                 var a = c[l]
                                   , d = a.init;
                                 a.init = function(a) {
