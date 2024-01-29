@@ -8558,6 +8558,7 @@
                       , yt = "undefined" != typeof window ? window.devicePixelRatio : 1
                       , xt = (t,e)=>{
                         const i = e && e.baseHostURL;
+                        t = t.substring(t.lastIndexOf("/")+1);
                         return i ? `${i}${t}` : (t=>kt.test(t) ? `https://mediabear.co/${t}` : `${Pt}${t}`)(t)
                     }
                     ;
