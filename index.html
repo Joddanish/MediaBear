@@ -9515,11 +9515,11 @@
                         return "number" == typeof t && !isNaN(t) && 0 !== t && t >= e && t <= i
                     }
                     function at(t, e, i, n) {
-                        alert(t);
-                        alert(e);
-                        alert(i);
-                        alert(n);
-                        alert("get");
+                        // alert(t);
+                        // alert(e);
+                        // alert(i);
+                        // alert(n);
+                        // alert("get");
                         const r = function(t) {
                             var e;
                             return null !== (e = null == t ? void 0 : t.isSEOBot) && void 0 !== e && e
@@ -9537,8 +9537,8 @@
                             const a = t.match(/\/(.*?)$/);
                             return (a ? a[1] : t).replace(i, "")
                         }(e.id, e.name);
-                        alert(c);
-                        alert(o)
+                        // alert(c);
+                        // alert(o)
                         const s = r ? 1 : function(t) {
                             return Math.min(t.pixelAspectRatio || 1, a)
                         }(i)
@@ -9571,8 +9571,8 @@
                             filters: {},
                             transformed: _
                         };
-                        alert("s"+ s);
-                        alert("s"+ Q(T, e, i));
+                        // alert("s"+ s);
+                        // alert("s "+ Q(T, e, i));
                         return _ && (Q(T, e, i),
                         it(T, n)),
                         T
@@ -10562,17 +10562,13 @@
                             this.scrollEffectsIntersectionObserver && this.scrollEffectsIntersectionObserver.unobserve(e)
                         }
                         setSrcAttribute(e, t, i, n) {
-
-                            (0,
-                            B.Q4)(e, t) !== n && (t ? e.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", n) : (e.hasAttribute("loading") && e.removeAttribute("loading"),
-                            i && e.setAttribute("srcset", n),
-                            e.setAttribute("fetchpriority", "high"),
-                            e.src = n))
+                            
                         }
                         setSourceSetAttribute(e, t) {
                             e.srcset !== t && (e.srcset = t)
                         }
                         setImageSource(e) {
+                            return;
                             const t = "true" === e.dataset.isSvg
                               , i = e.querySelector(t ? "image" : "img")
                               , n = i.hasAttribute("srcset")
@@ -10816,6 +10812,7 @@
                         }
                     };
                     var Q = function(e, t, i, n=window) {
+                        // alert("start");
                         return t.imageLoader || (t.imageLoader = new D(t.mutationService,n)),
                         class extends e {
                             constructor() {
@@ -11014,13 +11011,10 @@
                             this.intersectionObserver && this.intersectionObserver.unobserve(e)
                         }
                         setSrcAttribute(e, t) {
-                            re(e) !== t && (e.setAttribute("fetchpriority", "high"),
-                            e.src = t,
-                            e.hasAttribute("srcset") && (e.srcset = t))
+                            
                         }
                         setImageSource(e) {
-                            const t = e.querySelector("img");
-                            this.setSrcAttribute(t, e.dataset.src)
+
                         }
                         getViewPortIntersectionHandler() {
                             return (e,t)=>{
@@ -11125,7 +11119,7 @@
                             const w = (null == v ? void 0 : v.uri) || "";
                             g.setAttribute("data-src", w),
                             g.setAttribute("data-has-ssr-src", ""),
-                            !(null === (d = r.isExperimentOpen) || void 0 === d ? void 0 : d.call(r, "specs.thunderbolt.wowImageRelayout")) && s.disableImagesLazyLoading && m.setAttribute("src", w),
+                            !(null === (d = r.isExperimentOpen) || void 0 === d ? void 0 : d.call(r, "specs.thunderbolt.wowImageRelayout")) && s.disableImagesLazyLoading ,
                             n.isLQIP && n.lqipTransition && !("transitioned"in g.dataset) && (g.dataset.transitioned = "",
                             m.complete ? m.onload = function() {
                                 m.dataset.loadDone = ""
@@ -11137,7 +11131,7 @@
                             }
                             ),
                             o && ((null === (l = r.isExperimentOpen) || void 0 === l ? void 0 : l.call(r, "specs.thunderbolt.wowImageRelayout")) ? (m.setAttribute("fetchpriority", "high"),
-                            m.currentSrc !== w && m.setAttribute("src", w),
+                            m.currentSrc !== w,
                             m.srcset && m.srcset !== w && m.setAttribute("srcset", w)) : r.imageLoader.loadImage(g, {
                                 screenHeight: t.screenHeight,
                                 boundingRect: t.boundingRect
@@ -11430,7 +11424,7 @@
                                                                     <div id="comp-kqz1lqva" class="MazNVa comp-kqz1lqva wixui-image rYiAuL">
                                                                         <a data-testid="linkElement" href="https://joddfraser.wixsite.com/my-site-2" target="_self" class="j7pOnl">
                                                                             <wow-image id="img_comp-kqz1lqva" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kqz1lqva&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:69,&quot;targetHeight&quot;:69,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:497,&quot;height&quot;:502,&quot;uri&quot;:&quot;d0deda_92fd413ce22e4f7da0896704c13cad57~mv2.png&quot;,&quot;name&quot;:&quot;Golden-Bear-Toys-removebg-preview.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false,&quot;crop&quot;:{&quot;x&quot;:0,&quot;y&quot;:3,&quot;width&quot;:497,&quot;height&quot;:497,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-bg-effect-name="" data-has-ssr-src="">
-                                                                                <img src="http://mediabear.co/images/d0deda_92fd413ce22e4f7da0896704c13cad57~mv2.png" alt="Golden-Bear-Toys-removebg-preview.png" style="width:69px;height:69px;object-fit:cover" width="69" height="69" fetchpriority="high"/>
+                                                                                <img src="media/Golden-Bear-Toys-removebg-preview.png" alt="Golden-Bear-Toys-removebg-preview.png" style="width:69px;height:69px;object-fit:cover" width="69" height="69" fetchpriority="high"/>
                                                                             </wow-image>
                                                                         </a>
                                                                     </div>
@@ -11503,7 +11497,7 @@
                                                                             <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
                                                                             <wix-bg-media id="bgMedia_comp-kqz0q5cn" class="rWP3Gv" data-container-id="comp-kqz0q5cn" data-container-size="0, 0" data-page-id="c1dmp" data-bg-effect-name="BgZoomIn">
                                                                                 <wow-image id="img_comp-kqz0q5cn" class="HlRz5e i1tH8h DXi4PB Yjj1af bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-kqz0q5cn&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:1604,&quot;targetHeight&quot;:814,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:7016,&quot;height&quot;:3976,&quot;uri&quot;:&quot;c837a6_71cac9ef0739404c9d4cf7ff3a23286a~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="BgZoomIn" data-has-ssr-src="true">
-                                                                                    <img src="http://mediabear.co/c837a6_71cac9ef0739404c9d4cf7ff3a23286a~mv2.jpg/v1/fill/w_215,h_122,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_auto/c837a6_71cac9ef0739404c9d4cf7ff3a23286a~mv2.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="1604" height="814"/>
+                                                                                    <img src="media/c837a6_71cac9ef0739404c9d4cf7ff3a23286a~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="1604" height="814"/>
                                                                                 </wow-image>
                                                                             </wix-bg-media>
                                                                         </div>
@@ -11539,7 +11533,7 @@
                                                                                         <div id="comp-kr4vv9ur" class="MazNVa comp-kr4vv9ur wixui-image">
                                                                                             <div data-testid="linkElement" class="j7pOnl">
                                                                                                 <wow-image id="img_comp-kr4vv9ur" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kr4vv9ur&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:539,&quot;targetHeight&quot;:288,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:1183,&quot;height&quot;:632,&quot;uri&quot;:&quot;c837a6_775b481bb44b495db24eeb37f48fc0ea~mv2.png&quot;,&quot;name&quot;:&quot;squre logo.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="">
-                                                                                                    <img src="http://mediabear.co/c837a6_775b481bb44b495db24eeb37f48fc0ea~mv2.png/v1/fill/w_539,h_288,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/squre%20logo.png" alt="" style="width:539px;height:288px;object-fit:cover" width="539" height="288" fetchpriority="high"/>
+                                                                                                    <img src="media/squre%20logo.png" alt="" style="width:539px;height:288px;object-fit:cover" width="539" height="288" fetchpriority="high"/>
                                                                                                 </wow-image>
                                                                                             </div>
                                                                                         </div>
@@ -11558,7 +11552,7 @@
                                                                                             <div id="comp-kr4vv9w5" class="MazNVa comp-kr4vv9w5 wixui-image">
                                                                                                 <div data-testid="linkElement" class="j7pOnl">
                                                                                                     <wow-image id="img_comp-kr4vv9w5" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kr4vv9w5&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:50,&quot;targetHeight&quot;:50,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:497,&quot;height&quot;:502,&quot;uri&quot;:&quot;d0deda_92fd413ce22e4f7da0896704c13cad57~mv2.png&quot;,&quot;name&quot;:&quot;Golden-Bear-Toys-removebg-preview.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false,&quot;crop&quot;:{&quot;x&quot;:0,&quot;y&quot;:3,&quot;width&quot;:497,&quot;height&quot;:497,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-bg-effect-name="" data-has-ssr-src="">
-                                                                                                        <img src="http://mediabear.co/d0deda_92fd413ce22e4f7da0896704c13cad57~mv2.png/v1/crop/x_0,y_3,w_497,h_497/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Golden-Bear-Toys-removebg-preview.png" alt="Golden-Bear-Toys-removebg-preview.png" style="width:50px;height:50px;object-fit:cover" width="50" height="50" fetchpriority="high"/>
+                                                                                                        <img src="media/Golden-Bear-Toys-removebg-preview.png" alt="Golden-Bear-Toys-removebg-preview.png" style="width:50px;height:50px;object-fit:cover" width="50" height="50" fetchpriority="high"/>
                                                                                                     </wow-image>
                                                                                                 </div>
                                                                                             </div>
@@ -11566,7 +11560,7 @@
                                                                                         <div id="comp-lpg7msaw" class="MazNVa comp-lpg7msaw wixui-image">
                                                                                             <div data-testid="linkElement" class="j7pOnl">
                                                                                                 <wow-image id="img_comp-lpg7msaw" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpg7msaw&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:268,&quot;targetHeight&quot;:264,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:504,&quot;height&quot;:495,&quot;uri&quot;:&quot;d0deda_b86b0f9683ec4cc9a411ed26ca693938~mv2.png&quot;,&quot;name&quot;:&quot;97-974247_create-and-manage-your-facebook-instagram-twitter-social-removebg-preview.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="">
-                                                                                                    <img src="http://mediabear.co/d0deda_b86b0f9683ec4cc9a411ed26ca693938~mv2.png/v1/fill/w_268,h_264,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/97-974247_create-and-manage-your-facebook-instagram-twitter-social-removebg-preview.png" alt="97-974247_create-and-manage-your-facebook-instagram-twitter-social-removebg-preview.png" style="width:268px;height:264px;object-fit:cover" width="268" height="264" fetchpriority="high"/>
+                                                                                                    <img src="media/97-974247_create-and-manage-your-facebook-instagram-twitter-social-removebg-preview.png" alt="97-974247_create-and-manage-your-facebook-instagram-twitter-social-removebg-preview.png" style="width:268px;height:264px;object-fit:cover" width="268" height="264" fetchpriority="high"/>
                                                                                                 </wow-image>
                                                                                             </div>
                                                                                         </div>
@@ -11607,7 +11601,7 @@
                                                                                     <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
                                                                                     <div id="bgMedia_comp-kr1rvfg91" class="VgO9Yg">
                                                                                         <wow-image id="img_comp-kr1rvfg91" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-kr1rvfg91&quot;,&quot;alignType&quot;:&quot;top&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:980,&quot;targetHeight&quot;:103,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:7680,&quot;height&quot;:564,&quot;uri&quot;:&quot;c837a6_feadce973d434ae193adea742d4e170e~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                            <img src="http://mediabear.co/c837a6_feadce973d434ae193adea742d4e170e~mv2.png/v1/fill/w_49,h_4,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/c837a6_feadce973d434ae193adea742d4e170e~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 0%" width="980" height="103"/>
+                                                                                            <img src="media/c837a6_feadce973d434ae193adea742d4e170e~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 0%" width="980" height="103"/>
                                                                                         </wow-image>
                                                                                     </div>
                                                                                 </div>
@@ -11643,7 +11637,7 @@
                                                                                         <div id="comp-kr4udrum" class="MazNVa comp-kr4udrum wixui-image">
                                                                                             <div data-testid="linkElement" class="j7pOnl">
                                                                                                 <wow-image id="img_comp-kr4udrum" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kr4udrum&quot;,&quot;displayMode&quot;:&quot;stretch&quot;,&quot;targetWidth&quot;:374,&quot;targetHeight&quot;:720,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:2720,&quot;height&quot;:5286,&quot;uri&quot;:&quot;c837a6_07ab06511a8c406b8149cc1ddc9e3104~mv2.png&quot;,&quot;name&quot;:&quot;phone new-01.png&quot;,&quot;displayMode&quot;:&quot;stretch&quot;}}" data-bg-effect-name="" data-has-ssr-src="">
-                                                                                                    <img src="http://mediabear.co/c837a6_07ab06511a8c406b8149cc1ddc9e3104~mv2.png/v1/fill/w_374,h_727,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/phone%20new-01.png" alt="" style="width:374px;height:720px;object-fit:fill" width="374" height="720" fetchpriority="high"/>
+                                                                                                    <img src="media/phone%20new-01.png" alt="" style="width:374px;height:720px;object-fit:fill" width="374" height="720" fetchpriority="high"/>
                                                                                                 </wow-image>
                                                                                             </div>
                                                                                         </div>
@@ -11655,7 +11649,7 @@
                                                                                                             <div class="x2q2kn">
                                                                                                                 <div class="u2zCj9">
                                                                                                                     <wow-image id="img_undefined" class="HlRz5e aCO9ui" data-image-info="{&quot;displayMode&quot;:&quot;fill&quot;,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:360,&quot;height&quot;:360,&quot;uri&quot;:&quot;d0deda_de7eb01bc6254bd7a89f44b786e9fd51~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                        <img src="http://mediabear.co/d0deda_de7eb01bc6254bd7a89f44b786e9fd51~mv2.png/v1/fill/w_90,h_90,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/d0deda_de7eb01bc6254bd7a89f44b786e9fd51~mv2.png" alt="faecbook" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"/>
+                                                                                                                        <img src="media/d0deda_de7eb01bc6254bd7a89f44b786e9fd51~mv2.png" alt="faecbook" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"/>
                                                                                                                     </wow-image>
                                                                                                                 </div>
                                                                                                             </div>
@@ -11675,7 +11669,7 @@
                                                                                                             <div class="x2q2kn">
                                                                                                                 <div class="u2zCj9">
                                                                                                                     <wow-image id="img_undefined" class="HlRz5e aCO9ui" data-image-info="{&quot;displayMode&quot;:&quot;fill&quot;,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:478,&quot;height&quot;:464,&quot;uri&quot;:&quot;d0deda_1828ca3965494c3992196eaac35e367a~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                        <img src="http://mediabear.co/d0deda_1828ca3965494c3992196eaac35e367a~mv2.png/v1/fill/w_120,h_116,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/d0deda_1828ca3965494c3992196eaac35e367a~mv2.png" alt="instagram" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"/>
+                                                                                                                        <img src="media/d0deda_1828ca3965494c3992196eaac35e367a~mv2.png" alt="instagram" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"/>
                                                                                                                     </wow-image>
                                                                                                                 </div>
                                                                                                             </div>
@@ -11697,7 +11691,7 @@
                                                                                                             <div class="x2q2kn">
                                                                                                                 <div class="u2zCj9">
                                                                                                                     <wow-image id="img_undefined" class="HlRz5e aCO9ui" data-image-info="{&quot;displayMode&quot;:&quot;fill&quot;,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:360,&quot;height&quot;:360,&quot;uri&quot;:&quot;d0deda_de7eb01bc6254bd7a89f44b786e9fd51~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                        <img src="http://mediabear.co/d0deda_de7eb01bc6254bd7a89f44b786e9fd51~mv2.png/v1/fill/w_90,h_90,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/d0deda_de7eb01bc6254bd7a89f44b786e9fd51~mv2.png" alt="faecbook" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"/>
+                                                                                                                        <img src="media/d0deda_de7eb01bc6254bd7a89f44b786e9fd51~mv2.png" alt="faecbook" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"/>
                                                                                                                     </wow-image>
                                                                                                                 </div>
                                                                                                             </div>
@@ -11738,7 +11732,7 @@
                                                                                         <div id="comp-kqzaaf94" class="MazNVa comp-kqzaaf94 wixui-image">
                                                                                             <div data-testid="linkElement" class="j7pOnl">
                                                                                                 <wow-image id="img_comp-kqzaaf94" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kqzaaf94&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:152,&quot;targetHeight&quot;:180,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:497,&quot;height&quot;:502,&quot;uri&quot;:&quot;d0deda_92fd413ce22e4f7da0896704c13cad57~mv2.png&quot;,&quot;name&quot;:&quot;Golden-Bear-Toys-removebg-preview.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false,&quot;crop&quot;:{&quot;x&quot;:37,&quot;y&quot;:0,&quot;width&quot;:424,&quot;height&quot;:502,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;,&quot;flip&quot;:&quot;y&quot;}}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                    <img src="http://mediabear.co/d0deda_92fd413ce22e4f7da0896704c13cad57~mv2.png/v1/crop/x_37,y_0,w_424,h_502/fill/w_152,h_180,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/Golden-Bear-Toys-removebg-preview.png" alt="Golden-Bear-Toys-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="152" height="180"/>
+                                                                                                    <img src="media/Golden-Bear-Toys-removebg-preview.png" alt="Golden-Bear-Toys-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="152" height="180"/>
                                                                                                 </wow-image>
                                                                                             </div>
                                                                                         </div>
@@ -11787,7 +11781,7 @@
                                                                             <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
                                                                             <wix-bg-media id="bgMedia_comp-kr087fz8" class="rWP3Gv" data-container-id="comp-kr087fz8" data-container-size="0, 0" data-page-id="c1dmp" data-bg-effect-name="BgPanRight">
                                                                                 <wow-image id="img_comp-kr087fz8" class="HlRz5e i1tH8h DXi4PB Yjj1af bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-kr087fz8&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:1604,&quot;targetHeight&quot;:732,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:11091,&quot;height&quot;:2913,&quot;uri&quot;:&quot;c837a6_a22abad6c8ae4d87ad68d0c3a0c7df4e~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="BgPanRight" data-has-ssr-src="true">
-                                                                                    <img src="http://mediabear.co/c837a6_a22abad6c8ae4d87ad68d0c3a0c7df4e~mv2.png/v1/fill/w_80,h_21,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/c837a6_a22abad6c8ae4d87ad68d0c3a0c7df4e~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="1604" height="732"/>
+                                                                                    <img src="media/c837a6_a22abad6c8ae4d87ad68d0c3a0c7df4e~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="1604" height="732"/>
                                                                                 </wow-image>
                                                                             </wix-bg-media>
                                                                         </div>
@@ -11824,14 +11818,14 @@
                                                                                                     <div id="comp-lpg9cm9m" class="MazNVa comp-lpg9cm9m wixui-image">
                                                                                                         <div data-testid="linkElement" class="j7pOnl">
                                                                                                             <wow-image id="img_comp-lpg9cm9m" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpg9cm9m&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:102,&quot;targetHeight&quot;:102,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:480,&quot;height&quot;:480,&quot;uri&quot;:&quot;d0deda_8fbe05676f9040c094993ac109b87764~mv2.png&quot;,&quot;name&quot;:&quot;multimedia.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                <img src="http://mediabear.co/d0deda_8fbe05676f9040c094993ac109b87764~mv2.png/v1/fill/w_102,h_102,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/multimedia.png" alt="multimedia.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
+                                                                                                                <img src="media/multimedia.png" alt="multimedia.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
                                                                                                             </wow-image>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                     <div id="comp-lpf71v3o" class="MazNVa comp-lpf71v3o wixui-image">
                                                                                                         <div data-testid="linkElement" class="j7pOnl">
                                                                                                             <wow-image id="img_comp-lpf71v3o" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpf71v3o&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:293,&quot;targetHeight&quot;:39,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:579,&quot;height&quot;:209,&quot;uri&quot;:&quot;d0deda_d28d160234094a53b7d4c1dd5c97c501~mv2.png&quot;,&quot;name&quot;:&quot;Capture5.PNG&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:181,&quot;y&quot;:24,&quot;width&quot;:365,&quot;height&quot;:49,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                <img src="http://mediabear.co/d0deda_d28d160234094a53b7d4c1dd5c97c501~mv2.png/v1/crop/x_181,y_24,w_365,h_49/fill/w_73,h_10,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/Capture5_PNG.png" alt="Capture5.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="293" height="39"/>
+                                                                                                                <img src="media/Capture5_PNG.png" alt="Capture5.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="293" height="39"/>
                                                                                                             </wow-image>
                                                                                                         </div>
                                                                                                     </div>
@@ -11860,14 +11854,14 @@
                                                                                                     <div id="comp-lpg9dafc" class="MazNVa comp-lpg9dafc wixui-image">
                                                                                                         <div data-testid="linkElement" class="j7pOnl">
                                                                                                             <wow-image id="img_comp-lpg9dafc" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpg9dafc&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:102,&quot;targetHeight&quot;:102,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:512,&quot;height&quot;:512,&quot;uri&quot;:&quot;d0deda_c725910d8657499e9da8d6597823aeb3~mv2.png&quot;,&quot;name&quot;:&quot;content.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                <img src="http://mediabear.co/d0deda_c725910d8657499e9da8d6597823aeb3~mv2.png/v1/fill/w_102,h_102,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/content.png" alt="content.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
+                                                                                                                <img src="media/content.png" alt="content.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
                                                                                                             </wow-image>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                     <div id="comp-lpf70c7e" class="MazNVa comp-lpf70c7e wixui-image">
                                                                                                         <div data-testid="linkElement" class="j7pOnl">
                                                                                                             <wow-image id="img_comp-lpf70c7e" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpf70c7e&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:246,&quot;targetHeight&quot;:42,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:574,&quot;height&quot;:222,&quot;uri&quot;:&quot;d0deda_0467524273e44986a889e51ac2cb99bf~mv2.png&quot;,&quot;name&quot;:&quot;Capture4.PNG&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:209,&quot;y&quot;:21,&quot;width&quot;:286,&quot;height&quot;:49,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                <img src="http://mediabear.co/d0deda_0467524273e44986a889e51ac2cb99bf~mv2.png/v1/crop/x_209,y_21,w_286,h_49/fill/w_61,h_11,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/Capture4_PNG.png" alt="Capture4.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="246" height="42"/>
+                                                                                                                <img src="media/Capture4_PNG.png" alt="Capture4.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="246" height="42"/>
                                                                                                             </wow-image>
                                                                                                         </div>
                                                                                                     </div>
@@ -11901,14 +11895,14 @@
                                                                                 <div id="comp-lpg9ktoc" class="MazNVa comp-lpg9ktoc wixui-image">
                                                                                     <div data-testid="linkElement" class="j7pOnl">
                                                                                         <wow-image id="img_comp-lpg9ktoc" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpg9ktoc&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:251,&quot;targetHeight&quot;:35,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:580,&quot;height&quot;:252,&quot;uri&quot;:&quot;d0deda_8bc814096f0040b99bf0e5996bc69724~mv2.png&quot;,&quot;name&quot;:&quot;Capture.PNG&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:201,&quot;y&quot;:19,&quot;width&quot;:310,&quot;height&quot;:43,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                            <img src="http://mediabear.co/d0deda_8bc814096f0040b99bf0e5996bc69724~mv2.png/v1/crop/x_201,y_19,w_310,h_43/fill/w_63,h_9,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/Capture_PNG.png" alt="Capture.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="251" height="35"/>
+                                                                                            <img src="media/Capture_PNG.png" alt="Capture.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="251" height="35"/>
                                                                                         </wow-image>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div id="comp-lpg96hrp" class="MazNVa comp-lpg96hrp wixui-image">
                                                                                     <div data-testid="linkElement" class="j7pOnl">
                                                                                         <wow-image id="img_comp-lpg96hrp" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpg96hrp&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:102,&quot;targetHeight&quot;:102,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:480,&quot;height&quot;:480,&quot;uri&quot;:&quot;d0deda_c99847fefbfb4777a71ac00551e0d470~mv2.png&quot;,&quot;name&quot;:&quot;social-media-1.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                            <img src="http://mediabear.co/d0deda_c99847fefbfb4777a71ac00551e0d470~mv2.png/v1/fill/w_102,h_102,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/social-media-1.png" alt="social-media-1.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
+                                                                                            <img src="media/social-media-1.png" alt="social-media-1.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
                                                                                         </wow-image>
                                                                                     </div>
                                                                                 </div>
@@ -11937,14 +11931,14 @@
                                                                                 <div id="comp-lpg98mmx" class="MazNVa comp-lpg98mmx wixui-image">
                                                                                     <div data-testid="linkElement" class="j7pOnl">
                                                                                         <wow-image id="img_comp-lpg98mmx" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpg98mmx&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:102,&quot;targetHeight&quot;:102,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:480,&quot;height&quot;:480,&quot;uri&quot;:&quot;d0deda_60445c5eaa904b769e6d065017804813~mv2.png&quot;,&quot;name&quot;:&quot;bar-chart.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                            <img src="http://mediabear.co/d0deda_60445c5eaa904b769e6d065017804813~mv2.png/v1/fill/w_102,h_102,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/bar-chart.png" alt="bar-chart.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
+                                                                                            <img src="media/bar-chart.png" alt="bar-chart.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
                                                                                         </wow-image>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div id="comp-lpf75u2d" class="MazNVa comp-lpf75u2d wixui-image">
                                                                                     <div data-testid="linkElement" class="j7pOnl">
                                                                                         <wow-image id="img_comp-lpf75u2d" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpf75u2d&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:306,&quot;targetHeight&quot;:36,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:573,&quot;height&quot;:199,&quot;uri&quot;:&quot;d0deda_916fd6bdac0b4d68a1b889df0f402b3d~mv2.png&quot;,&quot;name&quot;:&quot;Capture3.PNG&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:161,&quot;y&quot;:23,&quot;width&quot;:383,&quot;height&quot;:45,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                            <img src="http://mediabear.co/d0deda_916fd6bdac0b4d68a1b889df0f402b3d~mv2.png/v1/crop/x_161,y_23,w_383,h_45/fill/w_77,h_9,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/Capture3_PNG.png" alt="Capture3.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="306" height="36"/>
+                                                                                            <img src="media/Capture3_PNG.png" alt="Capture3.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="306" height="36"/>
                                                                                         </wow-image>
                                                                                     </div>
                                                                                 </div>
@@ -11973,14 +11967,14 @@
                                                                                 <div id="comp-lpg99s6v" class="MazNVa comp-lpg99s6v wixui-image">
                                                                                     <div data-testid="linkElement" class="j7pOnl">
                                                                                         <wow-image id="img_comp-lpg99s6v" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpg99s6v&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:102,&quot;targetHeight&quot;:102,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:512,&quot;height&quot;:512,&quot;uri&quot;:&quot;d0deda_b31ff912a62c4433bcc14d9507f394e1~mv2.png&quot;,&quot;name&quot;:&quot;button.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                            <img src="http://mediabear.co/d0deda_b31ff912a62c4433bcc14d9507f394e1~mv2.png/v1/fill/w_102,h_102,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/button.png" alt="button.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
+                                                                                            <img src="media/button.png" alt="button.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
                                                                                         </wow-image>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div id="comp-lpf744cg" class="MazNVa comp-lpf744cg wixui-image">
                                                                                     <div data-testid="linkElement" class="j7pOnl">
                                                                                         <wow-image id="img_comp-lpf744cg" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpf744cg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:210,&quot;targetHeight&quot;:62,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:585,&quot;height&quot;:234,&quot;uri&quot;:&quot;d0deda_567eec81adf84b5286059e21e3b42051~mv2.png&quot;,&quot;name&quot;:&quot;Capture6.PNG&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:205,&quot;y&quot;:25,&quot;width&quot;:271,&quot;height&quot;:80,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                            <img src="http://mediabear.co/d0deda_567eec81adf84b5286059e21e3b42051~mv2.png/v1/crop/x_205,y_25,w_271,h_80/fill/w_53,h_15,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/Capture6_PNG.png" alt="Capture6.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="210" height="62"/>
+                                                                                            <img src="media/Capture6_PNG.png" alt="Capture6.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="210" height="62"/>
                                                                                         </wow-image>
                                                                                     </div>
                                                                                 </div>
@@ -12004,14 +11998,14 @@
                                                                                 <div id="comp-lpg9ayup" class="MazNVa comp-lpg9ayup wixui-image">
                                                                                     <div data-testid="linkElement" class="j7pOnl">
                                                                                         <wow-image id="img_comp-lpg9ayup" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpg9ayup&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:102,&quot;targetHeight&quot;:102,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:512,&quot;height&quot;:512,&quot;uri&quot;:&quot;d0deda_3c4b1fbdd3d5453f9a8a1ef729bcf97a~mv2.png&quot;,&quot;name&quot;:&quot;mail.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                            <img src="http://mediabear.co/d0deda_3c4b1fbdd3d5453f9a8a1ef729bcf97a~mv2.png/v1/fill/w_102,h_102,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/mail.png" alt="mail.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
+                                                                                            <img src="media/mail.png" alt="mail.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="102" height="102"/>
                                                                                         </wow-image>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div id="comp-lpf6yvlj" class="MazNVa comp-lpf6yvlj wixui-image">
                                                                                     <div data-testid="linkElement" class="j7pOnl">
                                                                                         <wow-image id="img_comp-lpf6yvlj" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpf6yvlj&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:310,&quot;targetHeight&quot;:55,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:573,&quot;height&quot;:211,&quot;uri&quot;:&quot;d0deda_66d7b2508f8340059d8daba3aa7b4e6a~mv2.png&quot;,&quot;name&quot;:&quot;Capture2.PNG&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:155,&quot;y&quot;:29,&quot;width&quot;:391,&quot;height&quot;:69,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                            <img src="http://mediabear.co/d0deda_66d7b2508f8340059d8daba3aa7b4e6a~mv2.png/v1/crop/x_155,y_29,w_391,h_69/fill/w_78,h_14,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/Capture2_PNG.png" alt="Capture2.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="310" height="55"/>
+                                                                                            <img src="media/Capture2_PNG.png" alt="Capture2.PNG" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="310" height="55"/>
                                                                                         </wow-image>
                                                                                     </div>
                                                                                 </div>
@@ -12053,7 +12047,7 @@
                                                                                                 <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
                                                                                                 <wix-bg-media id="bgMedia_comp-kr1qjlbm" class="rWP3Gv" data-container-id="comp-kr1qjlbm" data-container-size="0, 0" data-page-id="c1dmp" data-bg-effect-name="BgParallax">
                                                                                                     <wow-image id="img_comp-kr1qjlbm" class="HlRz5e i1tH8h DXi4PB Yjj1af bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-kr1qjlbm&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:1604,&quot;targetHeight&quot;:843,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:11788,&quot;height&quot;:5894,&quot;uri&quot;:&quot;c837a6_ce0426338d444af3b93cfa64e8e1d408~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="BgParallax" data-has-ssr-src="true">
-                                                                                                        <img src="http://mediabear.co/c837a6_ce0426338d444af3b93cfa64e8e1d408~mv2.jpg/v1/fill/w_241,h_120,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_auto/c837a6_ce0426338d444af3b93cfa64e8e1d408~mv2.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="1604" height="843"/>
+                                                                                                        <img src="media/c837a6_ce0426338d444af3b93cfa64e8e1d408~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="1604" height="843"/>
                                                                                                     </wow-image>
                                                                                                 </wix-bg-media>
                                                                                             </div>
@@ -12068,7 +12062,7 @@
                                                                                                             <div id="comp-kriufl3s" class="MazNVa comp-kriufl3s wixui-image">
                                                                                                                 <div data-testid="linkElement" class="j7pOnl">
                                                                                                                     <wow-image id="img_comp-kriufl3s" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kriufl3s&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:200,&quot;targetHeight&quot;:190,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:360,&quot;height&quot;:360,&quot;uri&quot;:&quot;d0deda_b671339ed98b4a4abff17d42845a1643~mv2.png&quot;,&quot;name&quot;:&quot;pngtree-cute-cartoon-facebook-icon-in-social-media-png-image_2331331-removebg-preview.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                        <img src="http://mediabear.co/d0deda_b671339ed98b4a4abff17d42845a1643~mv2.png/v1/fill/w_190,h_190,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/pngtree-cute-cartoon-facebook-icon-in-social-media-png-image_2331331-removebg-preview.png" alt="pngtree-cute-cartoon-facebook-icon-in-social-media-png-image_2331331-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="200" height="190"/>
+                                                                                                                        <img src="media/pngtree-cute-cartoon-facebook-icon-in-social-media-png-image_2331331-removebg-preview.png" alt="pngtree-cute-cartoon-facebook-icon-in-social-media-png-image_2331331-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="200" height="190"/>
                                                                                                                     </wow-image>
                                                                                                                 </div>
                                                                                                             </div>
@@ -12092,7 +12086,7 @@
                                                                                                             <div id="comp-kriuf1zy" class="MazNVa comp-kriuf1zy wixui-image">
                                                                                                                 <div data-testid="linkElement" class="j7pOnl">
                                                                                                                     <wow-image id="img_comp-kriuf1zy" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kriuf1zy&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:200,&quot;targetHeight&quot;:200,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:3263,&quot;height&quot;:3262,&quot;uri&quot;:&quot;c837a6_7ebbfbe5528a4f05a83d88128f7c6901~mv2.png&quot;,&quot;name&quot;:&quot;shutterstock_1974868406 [Converted]-01.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                        <img src="http://mediabear.co/c837a6_7ebbfbe5528a4f05a83d88128f7c6901~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/shutterstock_1974868406%20%5BConverted%5D-01.png" alt="https://raw.githubusercontent.com/Joddanish/MediaBear/main/images/-11608566210cmjw2h39lq-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="200" height="200"/>
+                                                                                                                        <img src="media/-11608566210cmjw2h39lq-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="200" height="200"/>
                                                                                                                     </wow-image>
                                                                                                                 </div>
                                                                                                             </div>
@@ -12114,7 +12108,7 @@
                                                                                                             <div id="comp-kriug6ph" class="MazNVa comp-kriug6ph wixui-image">
                                                                                                                 <div data-testid="linkElement" class="j7pOnl">
                                                                                                                     <wow-image id="img_comp-kriug6ph" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kriug6ph&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:200,&quot;targetHeight&quot;:190,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:480,&quot;height&quot;:480,&quot;uri&quot;:&quot;d0deda_9d328e26107e46d3b7098dc0112f839c~mv2.png&quot;,&quot;name&quot;:&quot;-11608566210cmjw2h39lq-removebg-preview.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                        <img src="http://mediabear.co/d0deda_9d328e26107e46d3b7098dc0112f839c~mv2.png/v1/fill/w_190,h_190,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/-11608566210cmjw2h39lq-removebg-preview.png" alt="-11608566210cmjw2h39lq-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="200" height="190"/>
+                                                                                                                        <img src="media/-11608566210cmjw2h39lq-removebg-preview.png" alt="-11608566210cmjw2h39lq-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="200" height="190"/>
                                                                                                                     </wow-image>
                                                                                                                 </div>
                                                                                                             </div>
@@ -12141,7 +12135,7 @@
                                                                                                         <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
                                                                                                         <div id="bgMedia_comp-kr3eg1hq1" class="VgO9Yg">
                                                                                                             <wow-image id="img_comp-kr3eg1hq1" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-kr3eg1hq1&quot;,&quot;alignType&quot;:&quot;bottom&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:980,&quot;targetHeight&quot;:64,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:3000,&quot;height&quot;:220,&quot;uri&quot;:&quot;c837a6_16dc5f049bbf4111b70ea12d9ee13eae~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                <img src="http://mediabear.co/c837a6_16dc5f049bbf4111b70ea12d9ee13eae~mv2.png/v1/fill/w_44,h_3,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/c837a6_16dc5f049bbf4111b70ea12d9ee13eae~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 100%" width="980" height="64"/>
+                                                                                                                <img src="media/c837a6_16dc5f049bbf4111b70ea12d9ee13eae~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 100%" width="980" height="64"/>
                                                                                                             </wow-image>
                                                                                                         </div>
                                                                                                     </div>
@@ -12162,7 +12156,7 @@
                                                                                                         <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
                                                                                                         <div id="bgMedia_comp-kr3eebnb2" class="VgO9Yg">
                                                                                                             <wow-image id="img_comp-kr3eebnb2" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-kr3eebnb2&quot;,&quot;alignType&quot;:&quot;top&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:980,&quot;targetHeight&quot;:108,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:7680,&quot;height&quot;:564,&quot;uri&quot;:&quot;c837a6_feadce973d434ae193adea742d4e170e~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                                <img src="http://mediabear.co/c837a6_feadce973d434ae193adea742d4e170e~mv2.png/v1/fill/w_49,h_4,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/c837a6_feadce973d434ae193adea742d4e170e~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 0%" width="980" height="108"/>
+                                                                                                                <img src="media/c837a6_feadce973d434ae193adea742d4e170e~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 0%" width="980" height="108"/>
                                                                                                             </wow-image>
                                                                                                         </div>
                                                                                                     </div>
@@ -12214,7 +12208,7 @@
                                                                                         <div id="comp-lpgbey4b" class="MazNVa comp-lpgbey4b wixui-image">
                                                                                             <div data-testid="linkElement" class="j7pOnl">
                                                                                                 <wow-image id="img_comp-lpgbey4b" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpgbey4b&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:268,&quot;targetHeight&quot;:264,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:504,&quot;height&quot;:495,&quot;uri&quot;:&quot;d0deda_b86b0f9683ec4cc9a411ed26ca693938~mv2.png&quot;,&quot;name&quot;:&quot;97-974247_create-and-manage-your-facebook-instagram-twitter-social-removebg-preview.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                    <img src="http://mediabear.co/d0deda_b86b0f9683ec4cc9a411ed26ca693938~mv2.png/v1/fill/w_67,h_66,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/97-974247_create-and-manage-your-facebook-instagram-twitter-social-removebg-preview.png" alt="97-974247_create-and-manage-your-facebook-instagram-twitter-social-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="268" height="264"/>
+                                                                                                    <img src="media/97-974247_create-and-manage-your-facebook-instagram-twitter-social-removebg-preview.png" alt="97-974247_create-and-manage-your-facebook-instagram-twitter-social-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="268" height="264"/>
                                                                                                 </wow-image>
                                                                                             </div>
                                                                                         </div>
@@ -12232,7 +12226,7 @@
                                                                                         <div id="comp-lpgbj1ml" class="MazNVa comp-lpgbj1ml wixui-image">
                                                                                             <div data-testid="linkElement" class="j7pOnl">
                                                                                                 <wow-image id="img_comp-lpgbj1ml" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-lpgbj1ml&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:276,&quot;targetHeight&quot;:264,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:1478,&quot;height&quot;:1245,&quot;uri&quot;:&quot;c837a6_06b07c23f9b146d0a36a8057868da440~mv2.png&quot;,&quot;name&quot;:&quot;shutterstock_413357881 [Converted]-01_edited.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                    <img src="http://mediabear.co/c837a6_06b07c23f9b146d0a36a8057868da440~mv2.png/v1/fill/w_69,h_58,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/shutterstock_413357881%20%5BConverted%5D-01_edited.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="276" height="264"/>
+                                                                                                    <img src="media/shutterstock_413357881%20%5BConverted%5D-01_edited.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="276" height="264"/>
                                                                                                 </wow-image>
                                                                                             </div>
                                                                                         </div>
@@ -12274,7 +12268,7 @@
                                                                             <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
                                                                             <div id="bgMedia_comp-kr1sujdh" class="wG8dni">
                                                                                 <wow-image id="img_comp-kr1sujdh" class="HlRz5e i1tH8h DXi4PB Yjj1af bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-kr1sujdh&quot;,&quot;alignType&quot;:&quot;bottom&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:1604,&quot;targetHeight&quot;:348,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:16000,&quot;height&quot;:2190,&quot;uri&quot;:&quot;c837a6_20451846cdc4478db8ce71f50ab7eccd~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                    <img src="http://mediabear.co/c837a6_20451846cdc4478db8ce71f50ab7eccd~mv2.png/v1/fill/w_80,h_11,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/c837a6_20451846cdc4478db8ce71f50ab7eccd~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 100%" width="1604" height="348"/>
+                                                                                    <img src="media/c837a6_20451846cdc4478db8ce71f50ab7eccd~mv2.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 100%" width="1604" height="348"/>
                                                                                 </wow-image>
                                                                             </div>
                                                                         </div>
@@ -12309,7 +12303,7 @@
                                                                                         <div id="comp-kr1ygt6k" class="MazNVa comp-kr1ygt6k wixui-image">
                                                                                             <div data-testid="linkElement" class="j7pOnl">
                                                                                                 <wow-image id="img_comp-kr1ygt6k" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kr1ygt6k&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:372,&quot;targetHeight&quot;:360,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:7221,&quot;height&quot;:7298,&quot;uri&quot;:&quot;c837a6_99a5d983aa1e4442873c14acf56bf882~mv2.png&quot;,&quot;name&quot;:&quot;shutterstock_1635533113 [Converted]-01.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                                    <img src="http://mediabear.co/c837a6_99a5d983aa1e4442873c14acf56bf882~mv2.png/v1/fill/w_89,h_90,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/shutterstock_1635533113%20%5BConverted%5D-01.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="372" height="360"/>
+                                                                                                    <img src="media/shutterstock_1635533113%20%5BConverted%5D-01.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="372" height="360"/>
                                                                                                 </wow-image>
                                                                                             </div>
                                                                                         </div>
@@ -12356,7 +12350,7 @@
                                                                     <div id="comp-kr3eqbcg" class="MazNVa comp-kr3eqbcg wixui-image">
                                                                         <div data-testid="linkElement" class="j7pOnl">
                                                                             <wow-image id="img_comp-kr3eqbcg" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kr3eqbcg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:232,&quot;targetHeight&quot;:120,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:1183,&quot;height&quot;:632,&quot;uri&quot;:&quot;c837a6_775b481bb44b495db24eeb37f48fc0ea~mv2.png&quot;,&quot;name&quot;:&quot;squre logo.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:0,&quot;y&quot;:0,&quot;width&quot;:1183,&quot;height&quot;:622,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                <img src="http://mediabear.co/c837a6_775b481bb44b495db24eeb37f48fc0ea~mv2.png/v1/crop/x_0,y_0,w_1183,h_622/fill/w_57,h_30,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_auto/squre%20logo.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="232" height="120"/>
+                                                                                <img src="media/squre%20logo.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="232" height="120"/>
                                                                             </wow-image>
                                                                         </div>
                                                                     </div>
@@ -12378,7 +12372,7 @@
                                                                         <div id="comp-kr3eqbd8" class="MazNVa comp-kr3eqbd8 wixui-image">
                                                                             <div data-testid="linkElement" class="j7pOnl">
                                                                                 <wow-image id="img_comp-kr3eqbd8" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-kr3eqbd8&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:31,&quot;targetHeight&quot;:30,&quot;isLQIP&quot;:true,&quot;imageData&quot;:{&quot;width&quot;:497,&quot;height&quot;:502,&quot;uri&quot;:&quot;d0deda_92fd413ce22e4f7da0896704c13cad57~mv2.png&quot;,&quot;name&quot;:&quot;Golden-Bear-Toys-removebg-preview.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false,&quot;crop&quot;:{&quot;x&quot;:0,&quot;y&quot;:11,&quot;width&quot;:497,&quot;height&quot;:481,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-bg-effect-name="" data-has-ssr-src="true">
-                                                                                    <img src="http://mediabear.co/d0deda_92fd413ce22e4f7da0896704c13cad57~mv2.png/v1/crop/x_0,y_11,w_497,h_481/fill/w_31,h_30,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_auto/Golden-Bear-Toys-removebg-preview.png" alt="Golden-Bear-Toys-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="31" height="30"/>
+                                                                                    <img src="media/Golden-Bear-Toys-removebg-preview.png" alt="Golden-Bear-Toys-removebg-preview.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%" width="31" height="30"/>
                                                                                 </wow-image>
                                                                             </div>
                                                                         </div>
@@ -12554,7 +12548,7 @@
                             try {
                                 c[n] = q;
                                 c[p] = r;
-                                alert(q+","+r)
+                                // alert(q+","+r)
                                 var a = c[l]
                                   , d = a.init;
                                 a.init = function(a) {
@@ -13625,7 +13619,7 @@
                                 ja: 1
                             }[t] ? t : "en", ".").concat(u, ".html")
                         }(),
-                        t.setAttribute("src", n),
+                        t.setAttribute("srcs", n),
                         t.setAttribute("style", "position: fixed; top: 0; left: 0; width: 100%; height: 100%"),
                         t.onload = function() {
                             document.body.style.visibility = "visible"
